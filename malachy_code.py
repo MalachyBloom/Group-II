@@ -21,6 +21,13 @@ def fourier(x,c):
             fs.append(np.cos(n*x/distance))
         n+=1
     return np.dot(np.array(c),np.array(fs)) 
+
+
+ncoef = 4
+c = [random.uniform(0,1.5)]
+    while len(c) < ncoef:
+        rand = random.uniform(-1.5,1.5)
+        c.append(rand)
   
   
  
